@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تويوتا كامري - الموديلات والمواصفات</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>موقع تويوتا كامري</h1>
+            <p>اكتشف تاريخ ومستقبل الأسطورة</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>استكشف موديلات كامري على مر السنين</h2>
+            <p>من الأجيال الكلاسيكية إلى أحدث الطرازات، نقدم لك نظرة شاملة على سيارة تويوتا كامري، أيقونة الاعتمادية والأداء.</p>
+        </section>
+
+        <section class="models-container">
+
+            <div class="model-card" onclick="toggleSpecs('specs-2025')">
+                <img src="https://i.imgur.com/gK92j9f.jpeg" alt="تويوتا كامري 2025">
+                <div class="model-info">
+                    <h3>تويوتا كامري 2025</h3>
+                    <p class="tagline">الجيل الجديد من الأداء الهجين</p>
+                    <ul class="specs-list">
+                        <li><strong>المحرك:</strong> 2.5 لتر 4 سلندر</li>
+                        <li><strong>القوة:</strong> 226 حصان (هجين مجمع)</li>
+                        <li><strong>ناقل الحركة:</strong> E-CVT</li>
+                        <li><strong>الوقود:</strong> 27.7 كم/لتر</li>
+                    </ul>
+                    <a href="#" class="btn">اكتشف المزيد</a>
+                </div>
+            </div>
+
+            <div class="model-card" onclick="toggleSpecs('specs-2024')">
+                <img src="https://i.imgur.com/k2yvLdO.jpeg" alt="تويوتا كامري 2024">
+                <div class="model-info">
+                    <h3>تويوتا كامري 2024</h3>
+                    <p class="tagline">تصميم عصري وتكنولوجيا متقدمة</p>
+                    <ul class="specs-list">
+                        <li><strong>المحرك:</strong> 2.5 لتر 4 سلندر</li>
+                        <li><strong>القوة:</strong> 204 حصان</li>
+                        <li><strong>ناقل الحركة:</strong> 8 سرعات أوتوماتيكي</li>
+                        <li><strong>الوقود:</strong> 17.2 كم/لتر</li>
+                    </ul>
+                    <a href="#" class="btn">اكتشف المزيد</a>
+                </div>
+            </div>
+
+            <div class="model-card" onclick="toggleSpecs('specs-2018')">
+                <img src="https://i.imgur.com/Hqf2q72.jpeg" alt="تويوتا كامري 2018">
+                <div class="model-info">
+                    <h3>تويوتا كامري 2018</h3>
+                    <p class="tagline">الجيل الثامن الجديد كلياً</p>
+                    <ul class="specs-list">
+                        <li><strong>المحرك:</strong> 2.5 لتر 4 سلندر</li>
+                        <li><strong>القوة:</strong> 178 - 206 حصان</li>
+                        <li><strong>ناقل الحركة:</strong> 8 سرعات أوتوماتيكي</li>
+                        <li><strong>التقنية:</strong> شاشة 7 بوصة</li>
+                    </ul>
+                    <a href="#" class="btn">اكتشف المزيد</a>
+                </div>
+            </div>
+            
+            <div class="model-card" onclick="toggleSpecs('specs-2010')">
+                <img src="https://i.imgur.com/7i25D8L.jpeg" alt="تويوتا كامري 2010">
+                <div class="model-info">
+                    <h3>تويوتا كامري 2010</h3>
+                    <p class="tagline">الاعتمادية والرحابة</p>
+                    <ul class="specs-list">
+                        <li><strong>المحرك:</strong> 2.5 لتر 4 سلندر</li>
+                        <li><strong>القوة:</strong> 169 حصان</li>
+                        <li><strong>ناقل الحركة:</strong> 6 سرعات أوتوماتيكي</li>
+                        <li><strong>الميزة:</strong> نظام تثبيت سرعة</li>
+                    </ul>
+                    <a href="#" class="btn">اكتشف المزيد</a>
+                </div>
+            </div>
+
+            <div class="model-card" onclick="toggleSpecs('specs-2006')">
+                <img src="https://i.imgur.com/K0c4y7t.jpeg" alt="تويوتا كامري 2006">
+                <div class="model-info">
+                    <h3>تويوتا كامري 2006</h3>
+                    <p class="tagline">الجيل الكلاسيكي الأيقوني</p>
+                    <ul class="specs-list">
+                        <li><strong>المحرك:</strong> 2.4 لتر 4 سلندر</li>
+                        <li><strong>القوة:</strong> 154 حصان</li>
+                        <li><strong>ناقل الحركة:</strong> 5 سرعات يدوي/آلي</li>
+                        <li><strong>المقاعد:</strong> 5 مقاعد</li>
+                    </ul>
+                    <a href="#" class="btn">اكتشف المزيد</a>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="specs-container">
+            <div id="specs-2025" class="full-specs">
+                <h4>المواصفات الكاملة لتويوتا كامري 2025</h4>
+                <ul>
+                    <li><strong>المحرك:</strong> 2.5 لتر، 4 أسطوانات (هجين)</li>
+                    <li><strong>القوة القصوى:</strong> 226 حصان (مجمع)</li>
+                    <li><strong>العزم الأقصى:</strong> 221 ن.م</li>
+                    <li><strong>ناقل الحركة:</strong> تتابعي متغير E-CVT</li>
+                    <li><strong>كفاءة استهلاك الوقود:</strong> 27.7 كم/لتر</li>
+                    <li><strong>التقنيات:</strong> شاشة معلومات 12.3 بوصة، نظام صوت JBL، Apple CarPlay لاسلكي</li>
+                    <li><strong>الأمان:</strong> نظام Toyota Safety Sense، كاميرا بانورامية 360 درجة</li>
+                </ul>
+            </div>
+
+            <div id="specs-2024" class="full-specs">
+                <h4>المواصفات الكاملة لتويوتا كامري 2024</h4>
+                <ul>
+                    <li><strong>المحرك:</strong> 2.5 لتر، 4 أسطوانات</li>
+                    <li><strong>القوة القصوى:</strong> 204 حصان</li>
+                    <li><strong>العزم الأقصى:</strong> 243 ن.م</li>
+                    <li><strong>ناقل الحركة:</strong> 8 سرعات أوتوماتيكي</li>
+                    <li><strong>كفاءة استهلاك الوقود:</strong> 17.2 كم/لتر</li>
+                    <li><strong>التقنيات:</strong> شاشة لمس 9 بوصة، شاحن لاسلكي، نظام ملاحة</li>
+                    <li><strong>الأمان:</strong> وسائد هوائية جانبية، نظام تثبيت السرعة</li>
+                </ul>
+            </div>
+
+            <div id="specs-2018" class="full-specs">
+                <h4>المواصفات الكاملة لتويوتا كامري 2018</h4>
+                <ul>
+                    <li><strong>المحرك:</strong> 2.5 لتر 4 سلندر أو 3.5 لتر V6</li>
+                    <li><strong>القوة القصوى:</strong> 206 حصان (4 سلندر) / 301 حصان (V6)</li>
+                    <li><strong>ناقل الحركة:</strong> 8 سرعات أوتوماتيكي</li>
+                    <li><strong>التقنيات:</strong> شاشة 8 بوصة، نظام صوتي JBL، الدخول الذكي</li>
+                    <li><strong>الأمان:</strong> نظام مساعدة على صعود المرتفعات، كاميرا خلفية</li>
+                </ul>
+            </div>
+
+            <div id="specs-2010" class="full-specs">
+                <h4>المواصفات الكاملة لتويوتا كامري 2010</h4>
+                <ul>
+                    <li><strong>المحرك:</strong> 2.5 لتر، 4 أسطوانات أو 3.5 لتر V6</li>
+                    <li><strong>القوة القصوى:</strong> 169 حصان (4 سلندر) / 268 حصان (V6)</li>
+                    <li><strong>ناقل الحركة:</strong> 6 سرعات أوتوماتيكي</li>
+                    <li><strong>التقنيات:</strong> نظام تحكم في المناخ، مشغل CD/MP3</li>
+                    <li><strong>الأمان:</strong> وسائد هوائية أمامية وجانبية، نظام مكابح مانعة للانغلاق (ABS)</li>
+                </ul>
+            </div>
+
+            <div id="specs-2006" class="full-specs">
+                <h4>المواصفات الكاملة لتويوتا كامري 2006</h4>
+                <ul>
+                    <li><strong>المحرك:</strong> 2.4 لتر، 4 أسطوانات أو 3.0 لتر V6</li>
+                    <li><strong>القوة القصوى:</strong> 154 حصان (4 سلندر) / 190 حصان (V6)</li>
+                    <li><strong>ناقل الحركة:</strong> 5 سرعات يدوي أو أوتوماتيكي</li>
+                    <li><strong>التقنيات:</strong> مقعد السائق قابل للتعديل يدوياً، مسند ذراع مركزي</li>
+                    <li><strong>الأمان:</strong> وسائد هوائية أمامية، نظام إنذار ضد السرقة</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2025 - تويوتا كامري</p>
+    </footer>
+
+    <script>
+        function toggleSpecs(specsId) {
+            // إخفاء كل أقسام المواصفات
+            var allSpecs = document.querySelectorAll('.full-specs');
+            allSpecs.forEach(function(specs) {
+                specs.classList.remove('active');
+            });
+
+            // إظهار القسم المحدد فقط
+            var selectedSpecs = document.getElementById(specsId);
+            selectedSpecs.classList.add('active');
+
+            // التمرير إلى قسم المواصفات
+            selectedSpecs.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
+
+</body>
+</html>

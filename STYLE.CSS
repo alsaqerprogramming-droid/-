@@ -1,0 +1,213 @@
+/*
+* ملف style.css
+* هذا الملف يحتوي على كل تنسيقات الموقع
+*/
+
+/* متغيرات الألوان */
+:root {
+    --primary-color: #000000; /* أسود */
+    --secondary-color: #333333; /* رمادي داكن */
+    --dark-color: #000000;
+    --light-color: #ffffff; /* أبيض */
+    --text-color: #222222; /* لون النص */
+    --accent-color: #cccccc; /* لون خفيف للتفاصيل */
+    --font-family: 'Cairo', sans-serif;
+}
+
+/* تنسيقات عامة للصفحة */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* لضمان أن يكون الموقع من اليمين لليسار */
+    background-color: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* تنسيق الحاويات */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* تنسيق رأس الصفحة (Header) */
+header {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* تنسيقات الأقسام الرئيسية */
+main {
+    padding: 20px 0;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* تنسيقات كروت الموديلات */
+.models-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.model-card {
+    background-color: var(--light-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 350px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.model-card:hover {
+    transform: translateY(-10px);
+}
+
+.model-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: grayscale(100%); /* لجعل الصور باللونين الأسود والأبيض */
+}
+
+.model-info {
+    padding: 20px;
+}
+
+.model-info h3 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.tagline {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.specs-list li {
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.specs-list strong {
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* تنسيقات قسم المواصفات الكاملة */
+.full-specs {
+    display: none; /* مخفي في البداية */
+    background-color: var(--light-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.full-specs.active {
+    display: block; /* يظهر عند النقر */
+}
+        
+.full-specs h4 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.full-specs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.full-specs li {
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--accent-color);
+}
+
+/* تنسيقات الفوتر (Footer) */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+        
+/* تنسيقات إضافية للشاشات الصغيرة (Mobile Responsiveness) */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2em;
+    }
+    .header-content p {
+        font-size: 1em;
+    }
+    .models-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .model-card {
+        width: 90%;
+    }
+}
